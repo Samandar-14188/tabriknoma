@@ -1,0 +1,63 @@
+.container {
+  display: flex;
+  gap: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 375px;
+  background: #000;
+  height: 100%;
+  justify-content: space-between;
+  padding: 40px 0px;
+}
+.loader-container,
+.video-container {
+  width: 375px;
+}
+.video-container {
+  height: 200px;
+}
+span {
+  font-size: 48px;
+  font-weight: bold;
+  background: linear-gradient(45deg, #ff6b6b, #ffde7d, #4d9f9f, #7b2cbf);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8),
+    0 0 20px rgba(255, 255, 255, 0.6), 0 0 30px rgba(255, 255, 255, 0.4),
+    0 0 40px rgba(255, 255, 255, 0.2);
+  animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.6),
+      0 0 20px rgba(255, 255, 255, 0.4), 0 0 30px rgba(255, 255, 255, 0.2),
+      0 0 40px rgba(255, 255, 255, 0.1);
+  }
+  to {
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.8),
+      0 0 30px rgba(255, 255, 255, 0.6), 0 0 40px rgba(255, 255, 255, 0.4),
+      0 0 50px rgba(255, 255, 255, 0.2);
+  }
+}
+*/ .text-container {
+  width: 100%;
+}
+.letter {
+  margin: 0 auto;
+  width: 321px;
+  border-radius: 10px;
+  border: 1px solid white;
+  background-image: url("./assets/Screenshot_1.png");
+  background-repeat: no-repeat;
+  height: 342px;
+}
+.dialog-container {
+  padding-top: 50px;
+}
+@media only screen and (max-width: 600px) {
+  .text-container {
+    width: 375px;
+  }
+}
